@@ -26,7 +26,6 @@ The following example shows the contents of a JSON metadata file for an add-in t
       "description": "Add two numbers",
       "helpUrl": "http://www.contoso.com/help",
       "result": {
-        "type": "number",
         "dimensionality": "scalar"
       },
       "parameters": [
@@ -49,9 +48,6 @@ The following example shows the contents of a JSON metadata file for an add-in t
 	  "name": "GETDAY",
 	  "description": "Get the day of the week",
 	  "helpUrl": "http://www.contoso.com/help",
-	  "result": {
-		"type": "string"
-	  },
 	  "parameters": []
 	},
 	{
@@ -60,8 +56,7 @@ The following example shows the contents of a JSON metadata file for an add-in t
 	  "description":  "Count up from zero",
 	  "helpUrl": "http://www.contoso.com/help",
 	  "result": {
-		"type": "number",
-		"dimensionality": "scalar"
+		    "dimensionality": "scalar"
 	  },
 	  "parameters": [
 		{
@@ -72,8 +67,8 @@ The following example shows the contents of a JSON metadata file for an add-in t
 		}
 	  ],
 	  "options": {
-		"stream": true,
-		"cancelable": true
+		    "stream": true,
+		    "cancelable": true
 	  }
 	},
 	{
@@ -82,8 +77,7 @@ The following example shows the contents of a JSON metadata file for an add-in t
 	  "description":  "Get the second highest number from a range",
 	  "helpUrl": "http://www.contoso.com/help",
 	  "result": {
-		"type": "number",
-		"dimensionality": "scalar"
+		    "dimensionality": "scalar"
 	  },
 	  "parameters": [
 		{
@@ -147,7 +141,6 @@ The `result` object defines the type of information that is returned by the func
 |  Property  |  Data type  |  Required  |  Description  |
 |:-----|:-----|:-----|:-----|
 |  `dimensionality`  |  string  |  No  |  Must be either **scalar** (a non-array value) or **matrix** (a 2-dimensional array). |
-|  `type`  |  string  |  Yes  |  The data type of the parameter. Must be **boolean**, **number**, **string**, or **any**, which allows you to use of any of the previous three types. |
 
 ## See also
 
