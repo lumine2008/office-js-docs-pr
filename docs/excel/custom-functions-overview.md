@@ -86,7 +86,6 @@ The following code in **customfunctions.json** specifies the metadata for the `a
       "description": "Add two numbers",
       "helpUrl": "http://www.contoso.com",
       "result": {
-        "type": "number",
         "dimensionality": "scalar"
       },
       "parameters": [
@@ -110,7 +109,6 @@ The following code in **customfunctions.json** specifies the metadata for the `a
       "description": "Periodically increment a value",
       "helpUrl": "http://www.contoso.com",
       "result": {
-          "type": "number",
           "dimensionality": "scalar"
     },
     "parameters": [
@@ -253,7 +251,6 @@ When you specify metadata for a streaming function in the JSON metadata file, yo
   "description": "Periodically increment a value",
   "helpUrl": "http://www.contoso.com",
   "result": {
-    "type": "number",
     "dimensionality": "scalar"
   },
   "parameters": [
@@ -300,7 +297,6 @@ To declare a function volatile, add `"volatile": true` within the `options` obje
   "description":  "Returns tomorrow’s date",
   "helpUrl": "http://www.contoso.com",
   "result": {
-      "type": "string",
       "dimensionality": "scalar"
   },
   "options": {
